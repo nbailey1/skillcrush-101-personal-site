@@ -1,0 +1,666 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/*==MOBILE FIRST==*/
+
+/*==MOBILE BASE STYLES==*/
+body,
+html {
+ font-family: 'Source Sans Pro', sans-serif;
+ font-size: 14px;
+}
+
+.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+width: 100%;
+}
+
+#about,
+#work,
+#contact-info {
+  width: 90%;
+  padding: 5%;
+}
+
+figure {
+  margin: auto;
+}
+/*==END MOBILE BASE STYLES==*/
+
+/*==MOBILE HEADER==*/
+header {
+  width: 100%;
+  margin: auto;
+  background: #ebebeb;
+}
+
+header h1 {
+  font-family: 'Lora', serif;
+  color: #bbc085;
+  margin: 0;
+  text-align: center;
+}
+
+nav {
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  padding: 15px 0;
+}
+
+nav ul li a {
+   text-transform: uppercase;
+   text-decoration: none;
+   color: #828282;
+}
+
+header h2 {
+   clear: both;
+   font-family: 'Lora', serif;
+   color: #9a9b9b;
+   margin: 0;
+   padding: 10px 5px;
+}
+
+header h2 span {
+ color: #2b2b2b;
+}
+
+#mobile-header-h2 {
+  background: url('../img/background-clipping-mask.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 175px;
+}
+/*==END MOBILE HEADER==*/
+
+/*==MOBILE ABOUT SECTION==*/
+#about h2 {
+   font-family: 'Lora', serif;
+   margin: auto;
+}
+/*==END MOBILE ABOUT SECTION==*/
+
+/*==MOBILE WORK SECTION==*/
+#work {
+   background: #f9ceb7;
+   text-align: center;
+}
+
+#work .third-width {
+  padding-bottom: 30px;
+}
+
+#work .work-icon img {
+  width: 15%;
+  height: auto;
+}
+
+#work h3,
+#work p {
+  margin: 10px 0;
+}
+
+#work p {
+   font-family: 'Lora', serif;
+   color: #ac9182;
+}
+
+#work .full-width .third-width p:last-child {
+  margin-bottom: 0;
+}
+/*==END MOBILE WORK SECTION==*/
+
+/*==MOBILE CONTACT SECTION==*/
+#contact {
+ background: #ebebeb;
+}
+
+#contact-img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border: 0;
+}
+
+#contact-info {
+  text-align: center;
+}
+
+#contact h2 {
+   font-family: 'Lora', serif;
+}
+
+#email-header{
+  font-weight: 400;
+}
+
+#envelope {
+  display: none;
+}
+
+#contact a {
+   text-decoration: none;
+   color: #c49075;
+   font-weight: bold;
+}
+
+#contact ul {
+   list-style: none;
+   margin: auto;
+   padding: 0;
+   text-align: center;
+}
+
+#contact ul li {
+    display: inline-block;
+}
+
+#contact ul li a img {
+  height: 20px;
+  padding: 10px;
+}
+/*==END MOBILE CONTACT SECTION==*/
+
+/*==END MOBILE FIRST==*/
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+/*==TABLET DESIGNS==*/
+@media (min-width: 768px) {
+    
+    /*==TABLET CONTACT SECTION==*/
+    #contact #contact-img-div {
+        text-align: center;
+    }
+    
+    #contact-img {
+        width: auto;
+        padding: 5%;
+    }
+    /*==END TABLET CONTACT SECTION==*/
+}
+
+/*==DESKTOP DESIGNS==*/
+@media (min-width: 940px) {
+
+  /*==DESKTOP BASE STYLES==*/
+  html,
+  body {
+    font-size: 18px;
+    height: 100%;
+  }
+
+  main {
+    height: 100%;
+  }
+
+  #about,
+  #work,
+  #contact {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+  /*==DESKTOP BASE STYLES==*/
+
+  /*==DESKTOP GRID==*/
+
+  .full-width {
+    width: 83.333333%;
+    margin: 0 auto;
+  }
+  .half-width,
+  #contact-info {
+    width: 50%;
+    margin: 0 auto;
+    float:left;
+  }
+  .third-width {
+    width: 33.333%;
+    margin: 0 auto;
+    float:left;
+  }
+  /*==END DESKTOP GRID==*/
+
+  /*==DESKTOP HEADER==*/
+  #mobile-header-h2 {
+    background: 0;
+  }
+
+  header {
+    width: 100%;
+    height: 100%;
+    background: url('../img/background-clipping-mask.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  header h1 {
+    font-size: 1.67em;
+    padding: 8.333% 0;
+    font-family: 'Lora', serif;
+    color: #bbc085;
+    margin: 0.67em 0;
+    text-align: left;
+  }
+
+  nav {
+    float: right;
+    padding: 12.5% 0;
+    width: 100%;
+    text-align: right;
+  }
+
+  nav ul li{
+    display: inline-block;
+    border-bottom: none;
+    padding: 15px 10% 15px 0;
+  }
+
+  nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #828282;
+  }
+
+  header h2 {
+    font-size: 2.5em;
+    width: 83.333333%;
+    clear: both;
+    font-family: 'Lora', serif;
+    line-height: 80px;
+    color: #9a9b9b;
+    padding: 1.67% 0;
+  }
+
+  header h2 span {
+    color: #2b2b2b;
+  }
+  /*==END DESKTOPHEADER==*/
+
+  /*==DESKTOP ABOUT SECTION==*/
+  #about .full-width {
+    padding: 6.67% 0;
+  }
+
+  #about h2 {
+    font-family: 'Lora', serif;
+    font-size: 2em;
+  }
+
+  #about p {
+    color: #7f7f7f;
+    line-height: 2.2;
+    padding-right: 50px;
+  }
+  /*==END DESKTOP ABOUT SECTION==*/
+
+  /*==DESKTOP WORK SECTION==*/
+  #work {
+    background: #f9ceb7;
+    text-align:center;
+  }
+
+  #work .full-width {
+    padding: 115px 0;
+  }
+
+  #work img {
+    padding-bottom: 30px;
+  }
+
+  #work h3 {
+    font-size: 1.3em;
+    width: 47.5%;
+    margin: 0 auto;
+  }
+
+  #work p {
+    font-family: 'Lora', serif;
+    line-height: 30px;
+    color: #ac9182;
+    padding: 0 35px;
+  }
+  /*==END DESKTOP WORK SECTION==*/
+
+  /*==DESKTOP CONTACT SECTION==*/
+  #contact {
+    background: #ebebeb;
+    font-size: 0.75em;
+  }
+
+  #contact .full-width {
+    padding: 110px 0;
+  }
+
+  #contact-img {
+    padding: 0;
+    border: 12px solid #ffffff;
+    margin: -12px;
+  }
+
+  #contact-info {
+    text-align: left;
+    padding: 0;
+  }
+
+  #envelope {
+    display: inline;
+  }
+
+  #contact-info h2,
+  #email-header,
+  #contact-info a,
+  #socialmedia-header,
+  #contact ul {
+    padding-left: 19%;
+  }
+
+  #envelope {
+    padding-right:10px;
+  }
+
+  #contact h2 {
+    font-family: 'Lora', serif;
+    font-size: 2em;
+  }
+
+  #email-header{
+    font-size: 1.7em;
+    font-weight: 400;
+  }
+  #socialmedia-header {
+    font-weight: bold;
+    font-size: 1.6em;
+  }
+
+  #contact a {
+    text-decoration: none;
+    color: #c49075;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+  #contact ul {
+    list-style: none;
+    text-align: left;
+  }
+  #contact ul li {
+     display: inline-block;
+  }
+  #contact ul img {
+  }
+  /*==END DESKTOP CONTACT SECTION==*/
+}
+/*==END DESKTOP DESIGNS==*/
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
